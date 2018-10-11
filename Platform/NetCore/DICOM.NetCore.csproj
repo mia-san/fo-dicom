@@ -59,9 +59,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegLossless14Codec.cs" Link="Imaging\Codec\DicomJpegLossless14Codec.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegLossless14SV1Codec.cs" Link="Imaging\Codec\DicomJpegLossless14SV1Codec.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegLsCodecImpl.cs" Link="Imaging\Codec\DicomJpegLsCodecImpl.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegLsLosslessCodec.cs" Link="Imaging\Codec\DicomJpegLsLosslessCodec.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegLsNearLosslessCodec.cs" Link="Imaging\Codec\DicomJpegLsNearLosslessCodec.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegNativeCodec.cs" Link="Imaging\Codec\DicomJpegNativeCodec.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegProcess1Codec.cs" Link="Imaging\Codec\DicomJpegProcess1Codec.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegProcess4Codec.cs" Link="Imaging\Codec\DicomJpegProcess4Codec.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\IJpegNativeCodec.cs" Link="Imaging\Codec\IJpegNativeCodec.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\Jpeg12Codec.NetCore.cs" Link="Imaging\Codec\Jpeg12Codec.NetCore.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\Jpeg16Codec.NetCore.cs" Link="Imaging\Codec\Jpeg16Codec.NetCore.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\Jpeg8Codec.NetCore.cs" Link="Imaging\Codec\Jpeg8Codec.NetCore.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\JpegMode.cs" Link="Imaging\Codec\JpegMode.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\NativeJpegParameters.cs" Link="Imaging\Codec\NativeJpegParameters.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\NativeJpegParametersExtensions.cs" Link="Imaging\Codec\NativeJpegParametersExtensions.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\NativePixelData.cs" Link="Imaging\Codec\NativePixelData.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\NativePixelDataExtensions.cs" Link="Imaging\Codec\NativePixelDataExtensions.cs" />
     <Compile Include="..\..\Platform\Desktop\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
@@ -119,21 +133,11 @@
     <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpeg2000LossyCodec.cs">
       <Link>Imaging\Codec\DicomJpeg2000LossyCodec.cs</Link>
     </Compile>
-    <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegCodecImpl.cs">
-      <Link>Imaging\Codec\DicomJpegCodecImpl.cs</Link>
-    </Compile>
-    <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegProcess1Codec.Mono.cs">
-      <Link>Imaging\Codec\DicomJpegProcess1Codec.Mono.cs</Link>
-    </Compile>
-    <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegProcess4Codec.Mono.cs">
-      <Link>Imaging\Codec\DicomJpegProcess4Codec.Mono.cs</Link>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="cscharls" Version="0.1.1" />
     <PackageReference Include="CSJ2K" Version="3.0.0" />
-    <PackageReference Include="Portable.LibJpeg.NET" Version="1.5.1.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.3.0" />
     <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
     <PackageReference Include="System.Net.NetworkInformation" Version="4.3.0" />
