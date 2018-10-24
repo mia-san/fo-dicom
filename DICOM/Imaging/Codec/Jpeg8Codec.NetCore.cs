@@ -1,70 +1,23 @@
-﻿namespace Dicom.Imaging.Codec
+﻿using System;
+using System.Runtime.InteropServices;
+using Dicom.IO.Buffer;
+
+
+namespace Dicom.Imaging.Codec
 {
     /// <summary>
     ///
     /// </summary>
-    public class Jpeg8Codec : IJpegNativeCodec
+    public class Jpeg8Codec : JpegCodecBase
     {
-        /// <summary>
-        ///
-        /// </summary>
-        public JpegMode Mode { get; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public int PointTransform { get; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public int Predictor { get; }
-
         /// <summary>
         ///
         /// </summary>
         /// <param name="mode"></param>
         /// <param name="predictor"></param>
         /// <param name="pointTransform"></param>
-        public Jpeg8Codec(JpegMode mode, int predictor, int pointTransform)
+        public Jpeg8Codec(JpegMode mode, int predictor, int pointTransform) : base(mode, predictor, pointTransform, 8)
         {
-            this.Mode = mode;
-            this.PointTransform = pointTransform;
-            this.Predictor = predictor;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="oldPixelData"></param>
-        /// <param name="newPixelData"></param>
-        /// <param name="jpegParams"></param>
-        /// <param name="frame"></param>
-        public void Decode(NativePixelData oldPixelData, NativePixelData newPixelData, NativeJpegParameters jpegParams, int frame)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="oldPixelData"></param>
-        /// <param name="newPixelData"></param>
-        /// <param name="jpegParams"></param>
-        /// <param name="frame"></param>
-        public void Encode(NativePixelData oldPixelData, NativePixelData newPixelData, NativeJpegParameters jpegParams, int frame)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        /// <param name="pixelData"></param>
-        /// <returns></returns>
-        public int ScanHeaderForPrecision(NativePixelData pixelData)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }
