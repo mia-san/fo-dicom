@@ -64,14 +64,24 @@
     <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegLsCodecImpl.cs" Link="Imaging\Codec\DicomJpegLsCodecImpl.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegLsLosslessCodec.cs" Link="Imaging\Codec\DicomJpegLsLosslessCodec.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegLsNearLosslessCodec.cs" Link="Imaging\Codec\DicomJpegLsNearLosslessCodec.cs" />
-    <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegNativeCodec.cs" Link="Imaging\Codec\DicomJpegNativeCodec.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegNativeCodec.NetCore.cs" Link="Imaging\Codec\DicomJpegNativeCodec.NetCore.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegProcess1Codec.cs" Link="Imaging\Codec\DicomJpegProcess1Codec.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\DicomJpegProcess4Codec.cs" Link="Imaging\Codec\DicomJpegProcess4Codec.cs" />
-    <Compile Include="..\..\DICOM\Imaging\Codec\IJpegNativeCodec.cs" Link="Imaging\Codec\IJpegNativeCodec.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\IJpegNativeCodec.NetCore.cs" Link="Imaging\Codec\IJpegNativeCodec.NetCore.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\ILibIjg.NetCore.cs" Link="Imaging\Codec\ILibIjg.NetCore.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\Jpeg12_Linux_X64.cs" Link="Imaging\Codec\Jpeg12_Linux_X64.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\Jpeg12_Linux_X86.cs" Link="Imaging\Codec\Jpeg12_Linux_X86.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\Jpeg12Codec.NetCore.cs" Link="Imaging\Codec\Jpeg12Codec.NetCore.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\Jpeg16_Linux_X64.cs" Link="Imaging\Codec\Jpeg16_Linux_X64.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\Jpeg16_Linux_X86.cs" Link="Imaging\Codec\Jpeg16_Linux_X86.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\Jpeg16Codec.NetCore.cs" Link="Imaging\Codec\Jpeg16Codec.NetCore.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\Jpeg8_Linux_X64.cs" Link="Imaging\Codec\Jpeg8_Linux_X64.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\Jpeg8_Linux_X86.cs" Link="Imaging\Codec\Jpeg8_Linux_X86.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\Jpeg8Codec.NetCore.cs" Link="Imaging\Codec\Jpeg8Codec.NetCore.cs" />
-    <Compile Include="..\..\DICOM\Imaging\Codec\JpegMode.cs" Link="Imaging\Codec\JpegMode.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\JpegCodecBase.NetCore.cs" Link="Imaging\Codec\JpegCodecBase.NetCore.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\JpegColorSpace.NetCore.cs" Link="Imaging\Codec\JpegColorSpace.NetCore.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\JpegMode.NetCore.cs" Link="Imaging\Codec\JpegMode.NetCore.cs" />
+    <Compile Include="..\..\DICOM\Imaging\Codec\JpegReadHeader.NetCore.cs" Link="Imaging\Codec\JpegReadHeader.NetCore.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\NativeJpegParameters.cs" Link="Imaging\Codec\NativeJpegParameters.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\NativeJpegParametersExtensions.cs" Link="Imaging\Codec\NativeJpegParametersExtensions.cs" />
     <Compile Include="..\..\DICOM\Imaging\Codec\NativePixelData.cs" Link="Imaging\Codec\NativePixelData.cs" />
@@ -88,7 +98,7 @@
     <Compile Include="..\..\DICOM\Imaging\RawImage.cs">
       <Link>Imaging\RawImage.cs</Link>
     </Compile>
-    <Compile Include="..\..\DICOM\Imaging\RawImageManager.cs">
+        <Compile Include="..\..\DICOM\Imaging\RawImageManager.cs">
       <Link>Imaging\RawImageManager.cs</Link>
     </Compile>
     <Compile Include="..\..\DICOM\IO\DesktopDirectoryReference.cs">
@@ -147,5 +157,5 @@
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.3.0" />
     <PackageReference Include="System.Threading.Tasks.Parallel" Version="4.3.0" />
   </ItemGroup>
-  
+
 </Project>
