@@ -27,7 +27,7 @@
         /// <param name="newPixelData"></param>
         /// <param name="jpegParams"></param>
         /// <param name="frame"></param>
-        void Decode(NativePixelData oldPixelData, NativePixelData newPixelData, NativeJpegParameters jpegParams, int frame);
+        void Decode(DicomPixelData oldPixelData, DicomPixelData newPixelData, DicomJpegParams jpegParams, int frame);
 
         /// <summary>
         ///
@@ -36,13 +36,13 @@
         /// <param name="newPixelData"></param>
         /// <param name="jpegParams"></param>
         /// <param name="frame"></param>
-        void Encode(NativePixelData oldPixelData, NativePixelData newPixelData, NativeJpegParameters jpegParams, int frame);
+        void Encode(DicomPixelData oldPixelData, DicomPixelData newPixelData, DicomJpegParams jpegParams, int frame);
 
         /// <summary>
         ///
         /// </summary>
         /// <param name="pixelData"></param>
         /// <returns></returns>
-        int ScanHeaderForPrecision(NativePixelData pixelData);
+        int ScanHeaderForPrecision(DicomPixelData pixelData);
     }
 }
