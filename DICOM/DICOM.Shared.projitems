@@ -77,6 +77,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Imaging\Color32.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Imaging\ColorSpace.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Imaging\ColorTable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Imaging\DicomFrame.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Imaging\DicomImage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Imaging\DicomImagingException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Imaging\DicomOverlayData.cs" />
